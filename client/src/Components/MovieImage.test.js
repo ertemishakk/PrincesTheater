@@ -14,7 +14,7 @@ describe("Check Images", () => {
     }
 
     test('should render image', () => {
-        const { container } = render(<MovieImage movie={testMovie} />)
+        const { container } = render(<MovieImage poster={testMovie.Poster} title={testMovie.Title} />)
         expect(container.getElementsByClassName('movie-image').length).toBe(1)
     });
 })

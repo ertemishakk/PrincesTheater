@@ -14,6 +14,6 @@ let testMovie = {
 
 test('should render movies passed into MoviePrices component ', () => {
     render(<MoviePrices cwPrice={testMovie.cinemaWorldPrice} fwPrice={testMovie.filmWorldPrice} />)
-    const priceElement = screen.getByText(/24/)
-    expect(priceElement).toBeInTheDocument()
+    const cinemaWorldPriceElement = screen.getByText(/24/)
+    expect(cinemaWorldPriceElement).toBeInTheDocument()
 });

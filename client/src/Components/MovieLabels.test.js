@@ -26,7 +26,7 @@ describe("MovieLabels", () => {
     });
 
     test('should render movie release date', () => {
-        render(<MovieLabels title={testMovie.Title} releaseDate='Tuesday 9th March 2021' movieDuration={120} />)
+        render(<MovieLabels releaseDate='Tuesday 9th March 2021' />)
 
         const releaseDateElement = screen.getByTestId('release-date')
         expect(releaseDateElement).toHaveTextContent("Tuesday 9th March 2021")
@@ -34,7 +34,7 @@ describe("MovieLabels", () => {
     });
 
     test('should render movie duration', () => {
-        render(<MovieLabels title={testMovie.Title} releaseDate='Tuesday 9th March 2021' movieDuration={120} />)
+        render(<MovieLabels movieDuration={120} />)
 
         const movieDurationElement = screen.getByTestId('movie-duration')
         expect(movieDurationElement).toHaveTextContent(120)
