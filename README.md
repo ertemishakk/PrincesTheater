@@ -86,7 +86,7 @@ The application uses a standard react app approach in the frontend to seperate U
 
 ## Assumptions 
 
--Response recieved from the API might not be reliable, so relevant functionality needs to be implemented. In case of an error, the application will recall ```getMovies()``` function up to 10 times to ensure that a response is recieved. (```getMovies()``` called unlimited times in demo)
+-Response recieved from the API might not be reliable, so relevant functionality needs to be implemented. In case of an error, the application will recall ```getMovies()``` function up to 10 times to ensure that a response is recieved.
 
 -Another approach would be periodically storing the data in MongoDB database or localstorage.
 
