@@ -6,6 +6,7 @@ import MoviesTopBar from './MoviesTopBar'
 import MoviesErrors from './MoviesErrors'
 import Spinner from './Spinner'
 import moment from 'moment'
+import NavBar from './NavBar'
 
 
 export default class MovieList extends Component {
@@ -56,20 +57,24 @@ export default class MovieList extends Component {
 
     render() {
         return (
-            <div className='container movie-list'>
-                <MoviesTopBar lastUpdate={moment(this.state.lastUpdate).format('dddd Do MMMM YYYY h:mm:ss a')} refreshMovies={this.getMovies} />
-                <MoviesErrors error={this.state.error} />
-                <div>
-                    <Row className=' mx-0 '>
-                        {this.state.loading ? <Spinner /> :
-                            this.state.movies ?.map(movie => (
-                                <Col md='3' sm='6' xs='6' key={movie[0].ID}>
-                                    <EachMovie title={movie[0].Title} poster={movie[0].Poster} cwPrice={movie[0].Price} fwPrice={movie[1].Price} />
-                                </Col>
-                            ))}
-                    </Row>
+            <div>
+                <NavBar />
+                <div className='container movie-list'>
+                    <MoviesTopBar lastUpdate={moment(this.state.lastUpdate).format('dddd Do MMMM YYYY h:mm:ss a')} refreshMovies={this.getMovies} />
+                    <MoviesErrors error={this.state.error} />
+                    <div>
+                        <Row className=' mx-0 '>
+                            {this.state.loading ? <Spinner /> :
+                                this.state.movies ?.map(movie => (
+                                    <Col md='3' sm='6' xs='6' key={movie[0].ID}>
+                                        <EachMovie title={movie[0].Title} poster={movie[0].Poster} cwPrice={movie[0].Price} fwPrice={movie[1].Price} />
+                                    </Col>
+                                ))}
+                        </Row>
+                    </div>
                 </div>
             </div>
+
         )
     }
 }

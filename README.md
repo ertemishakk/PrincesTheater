@@ -23,15 +23,15 @@ To run this full stack app, <br/>
 -If you dont have nodejs and npm set up [click here](https://nodejs.org/en/download/) and download the recommended version of nodejs which includes npm.
 
 
--Clone the project from the github repo <br/>
+-Clone the project from the github repo ```git clone https://github.com/ertemishakk/PrincesTheater.git``` <br/>
 
 Front and back end requires seperate setup.
 
-Initially navigate to ```client``` folder in your terminal from root file and install the node modules for the front with the following command.
+Initially navigate to ```client``` folder (```cd client```) in your terminal from root file and install the node modules for the front with the following command.
 
 ### `npm install`
 
-Then navigate to ```server``` folder and install the node modules for the backend using the same command.
+Then navigate to ```server``` folder (``` cd .. and``` then ```cd server```) and install the node modules for the backend using the same command.
 
 ### `npm install`
 
