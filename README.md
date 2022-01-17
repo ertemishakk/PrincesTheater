@@ -5,7 +5,7 @@
 ## Description
 
 An implementation of Lexicon Digital
-Coding Challenge, which allows users to see what movies are available at a given time, and which movie provider streams at the cheapest price.
+Coding Challenge, which allows users to see what movies are available at a given time, and which movie provider streams at the cheapest price. The cheapest price is highlighted - allowing users to easily compare movie prices.
 
 ## Technologies and Dependencies used
 -React <br/>
