@@ -31,7 +31,7 @@ Initially navigate to ```client``` folder (```cd client```) in your terminal fro
 
 ### `npm install`
 
-Then navigate to ```server``` folder (``` cd .. and``` then ```cd server```) and install the node modules for the backend using the same command.
+Then navigate to ```server``` folder (``` cd ..``` and then ```cd server```) and install the node modules for the backend using the same command.
 
 ### `npm install`
 
